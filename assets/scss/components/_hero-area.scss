@@ -1,0 +1,31 @@
+/*======= Hero Area =======*/
+.hero-area {
+    .hero-content {
+        h1 {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.38;
+            padding-bottom: 6px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.7;
+            color: $color-gray;
+        }
+        .hero-links {
+            .common-button {
+                padding: 16px 48px;
+                margin-right: 48px;
+            }
+            .hero-link {
+                padding: 16px 48px;
+                color: $color-gray;
+                border: 1px solid $color-gray;
+                border-radius: 8px;
+            }
+        }
+    }
+    .hero-slide {
+    }
+}

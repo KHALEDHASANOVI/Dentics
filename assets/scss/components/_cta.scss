@@ -1,0 +1,27 @@
+/*======= Call To Action =======*/
+.cat-area {
+    background-color: $color-main;
+    color: $color-white;
+    .cat-title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 60px;
+        color: $color-white;
+        margin-bottom: 24px;
+        samp {
+            font-family: $font-inter;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+        }
+    }
+    .cat-text {
+        margin-bottom: 56px;
+    }
+    .cat-button {
+        color: $color-white;
+        border: 1px solid $color-white;
+        padding: 14px 48px;
+        border-radius: 16px;
+    }
+}

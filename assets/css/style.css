@@ -1,0 +1,830 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Project Name - Project Short Description
+    Template URI: https://example.net
+    Author: Humayun Ahmed
+    Author URI:  https://example.net
+    Version: 1.0
+
+    Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. Fonts
+    #. Common
+    #. Input field
+    #. Keyframes & Animation
+    #. Header
+        ##. Header
+    #. Components
+        ##. Hero Area
+        ##. Icon Box
+        ##. Testimonials
+        ##. Call To Action
+        ##. Info Box
+        ##. Specific Section
+        ##. Blog
+            ###. Blog Standard
+            ###. Blog Details
+            ###. Blog Pagination
+            ###. Blog Comments
+            ###. Blog Sidebar
+        ##. Shop
+            ###. Product
+            ###. Product Category
+            ###. Product Filter
+            ###. Product Sidebar
+        ##. Footer
+        ##. 404
+        ##. Coming Soon
+-----------------------------------------------------------------------------------*/
+/*======= Fonts =======*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+/*======= Common =======*/
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark-black: #03031c;
+  --color-dark-black-2: #040528;
+  --color-gray: #c0c0c0;
+  --color-off-white: #f2f4f6;
+  --color-main: #516eff;
+  --color-secondary: #ffd700;
+  --color-red: #da0037;
+  --color-black-rgb: 0 0 0;
+  --font-inter: 'Inter', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-black);
+  margin: 0px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: var(--color-black);
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  display: inline-block;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+/*======= Common Classes =======*/
+span {
+  color: var(--color-secondary);
+}
+
+.common-button {
+  padding: 16px 40px !important;
+  color: var(--color-white) !important;
+  background-color: var(--color-main);
+  border-radius: 8px;
+}
+
+/*======= Custom Container =======*/
+/*======= Background & Colors =======*/
+/*======= Input field =======*/
+a:focus,
+.slick-initialized .slick-slide:focus,
+.navbar-toggler:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+input:focus {
+  box-shadow: none;
+}
+
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input,
+select,
+textarea,
+.nice-select {
+  width: 100%;
+  height: 21px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+textarea {
+  padding-top: 20px;
+  height: 200px;
+  display: inherit;
+}
+
+.nice-select {
+  display: flex;
+  align-items: center;
+}
+.nice-select .current {
+  line-height: 1;
+}
+.nice-select .list {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -10px 10px 35px rgb(var(--color-black-rgb)/5%);
+  border: 1px solid var(--color-white);
+}
+.nice-select .list .option {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  height: auto;
+  min-height: auto;
+  line-height: 1;
+}
+.nice-select .list .option:hover, .nice-select .list .option.selected {
+  background-color: transparent;
+}
+.nice-select .list .option:hover, .nice-select .list .option.focus, .nice-select .list .option.selected.focus {
+  background-color: transparent;
+}
+.nice-select .list .option.selected {
+  font-weight: normal;
+}
+.nice-select .list .option:not(:last-child) {
+  border-bottom: 1px solid var(--color-white);
+}
+.nice-select::after {
+  content: "\ea4a";
+  border: none;
+  position: absolute;
+  line-height: 1;
+  right: 0;
+  top: 0;
+  transform: rotate(0);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform-origin: unset;
+  width: auto;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "boxicons";
+}
+.nice-select.open::after {
+  transform: rotate(180deg);
+}
+
+/*======= keyframes & Animation =======*/
+@-webkit-keyframes sticky {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes zoom-fade {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes zoom-fade {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes float-bob {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes float-bob {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@-webkit-keyframes float-bob-x {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes float-bob-x {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@-webkit-keyframes float-bob-y {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes hero-float-bob-y {
+  0% {
+    transform: rotate(-90deg) translateY(-20px);
+    border-radius: 20px 90px;
+  }
+  50% {
+    transform: rotate(-90deg) translateY(-10px);
+    border-radius: 15px 70px;
+  }
+  100% {
+    transform: rotate(-90deg) translateY(-20px);
+    border-radius: 20px 90px;
+  }
+}
+@keyframes hero-float-bob-y {
+  0% {
+    transform: rotate(-90deg) translateY(-20px);
+    border-radius: 20px 90px;
+  }
+  50% {
+    transform: rotate(-90deg) translateY(-10px);
+    border-radius: 15px 70px;
+  }
+  100% {
+    transform: rotate(-90deg) translateY(-20px);
+    border-radius: 20px 90px;
+  }
+}
+@-webkit-keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    top: calc(100% + 40px);
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes slide-down {
+  0% {
+    top: calc(100% + 40px);
+  }
+  100% {
+    top: 100%;
+  }
+}
+.animate-zoominout {
+  -webkit-animation-name: zoomInOut;
+          animation-name: zoomInOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.animate-zoom-fade {
+  -webkit-animation-name: zoom-fade;
+          animation-name: zoom-fade;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.animate-float-bob {
+  -webkit-animation-name: float-bob;
+          animation-name: float-bob;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.animate-float-bob-x {
+  -webkit-animation-name: float-bob-x;
+          animation-name: float-bob-x;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.animate-float-bob-y {
+  -webkit-animation-name: float-bob-y;
+          animation-name: float-bob-y;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.animate-rotate-me {
+  -webkit-animation-name: rotateme;
+          animation-name: rotateme;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/*======= Header  =======*/
+.header-area .navbar {
+  border-bottom: 1px solid var(--color-gray);
+  padding-bottom: 23px;
+}
+.header-area .navbar .navbar-brand {
+  font-family: var(--font-ubuntu);
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 0.77;
+}
+.header-area .navbar .navbar-brand .logo-image {
+  margin-right: 16px;
+}
+.header-area .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 16px 20px;
+  color: var(--color-black);
+}
+.header-area .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+.header-area .navbar .navbar-collapse .navbar-nav .nav-item .common-button {
+  margin-left: 40px;
+}
+
+/*======= Hero Area =======*/
+.hero-area .hero-content h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.38;
+  padding-bottom: 6px;
+}
+.hero-area .hero-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-gray);
+}
+.hero-area .hero-content .hero-links .common-button {
+  padding: 16px 48px;
+  margin-right: 48px;
+}
+.hero-area .hero-content .hero-links .hero-link {
+  padding: 16px 48px;
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  border-radius: 8px;
+}
+/*======= Icon Box =======*/ /*======= Testimonial =======*/ /*======= Call To Action =======*/
+.cat-area {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+.cat-area .cat-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+.cat-area .cat-title samp {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+.cat-area .cat-text {
+  margin-bottom: 56px;
+}
+.cat-area .cat-button {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  padding: 14px 48px;
+  border-radius: 16px;
+}
+
+/*======= Info box =======*/ /*======= Specific Section =======*/
+/*======= service-area Section =======*/
+.service-area {
+  background-color: var(--color-main);
+}
+.service-area .service-content h2 {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.1;
+}
+.service-area .service-content p {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.46;
+}
+.service-area .service-box {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 24px 32px;
+  border-radius: 16px;
+}
+.service-area .service-box i {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+/*======= key-service-area Section =======*/
+.key-service-area .key-content-top {
+  border-bottom: 1px solid var(--color-gray);
+}
+.key-service-area .key-content-top .key-heading {
+  background-color: #f8fafc;
+  padding: 104px 0px 56px 31px;
+}
+.key-service-area .key-content-top .key-heading h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.34;
+}
+.key-service-area .key-content-top .key-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-gray);
+}
+.key-service-area .key-content-bottom .key-img {
+  padding: 48px 0px 104px 31px;
+  background-color: #f8fafc;
+  border-radius: 0px 0px 136px 0px;
+}
+.key-service-area .key-content-bottom .key-list {
+  padding: 88px 0px 104px 0px;
+}
+.key-service-area .key-content-bottom .key-list h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.42;
+}
+.key-service-area .key-content-bottom .key-list ul li {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.46;
+}
+
+/*======= features-area Section =======*/
+.common-heading h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.34;
+}
+.common-heading h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.features-area .icon-boxses .icon-box {
+  margin-bottom: 20px;
+  background-color: #f8fafc;
+  border: 1px solid rgba(82, 82, 91, 0.1);
+  border-radius: 16px;
+  padding: 40px 32px;
+}
+.features-area .icon-boxses .icon-box .i-box-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.42;
+}
+.features-area .icon-boxses .icon-box .i-box-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+/*======= history-area Section =======*/
+.history-area .history-content {
+  background: #f8fafc;
+  border: 1px solid rgba(82, 82, 91, 0.1);
+  border-radius: 16px;
+  padding: 48px;
+}
+.history-area .history-content h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 5px;
+}
+.history-area .history-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: var(--color-gray);
+}
+
+/*======= team-area Section =======*/
+.team-area {
+  background: #f8fafc;
+}
+.team-area .img-box img {
+  border: 3px solid var(--color-white);
+  border-radius: 108px;
+}
+.team-area .img-box .img-box-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+}
+.team-area .img-box .img-box-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.team-area .img-box .img-box-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-main);
+  border: 1.5px solid var(--color-main);
+  padding: 12px 40px;
+  border-radius: 8px;
+}
+
+/*======= contact-area Section =======*/
+.contact-area .contact-form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact-area .contact-form .form-control {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 17px;
+}
+.contact-area .contact-form .form-check-input {
+  padding: 8px;
+  margin-right: 8px;
+}
+.contact-area .form-floating > .form-select {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.contact-area .form-floating > .form-control,
+.contact-area .form-floating > .form-select {
+  height: 35px;
+}
+
+/*======= Newsletter-area Section =======*/
+.newsletter-area {
+  background-color: #f8fafc;
+}
+.newsletter-area .newsletter-bg {
+  background-color: #216583;
+  border-radius: 20px;
+}
+.newsletter-area .newsletter-bg .newsletter-content h2 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 46px;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+.newsletter-area .newsletter-bg .newsletter-content .newsletter-form .form-control {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 17px 20px;
+  color: var(--color-white);
+}
+.newsletter-area .newsletter-bg .newsletter-content .newsletter-form input::-moz-placeholder {
+  color: var(--color-white);
+}
+.newsletter-area .newsletter-bg .newsletter-content .newsletter-form input:-ms-input-placeholder {
+  color: var(--color-white);
+}
+.newsletter-area .newsletter-bg .newsletter-content .newsletter-form input::placeholder {
+  color: var(--color-white);
+}
+
+/*======= footer-area Section =======*/
+.footer-area {
+  background: var(--color-main);
+  color: var(--color-white);
+}
+.footer-area .footer-top .h-b-p {
+  padding-bottom: 40px;
+}
+.footer-area .footer-top .footer-brand {
+  color: var(--color-white);
+  font-family: var(--font-ubuntu);
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 0.77;
+}
+.footer-area .footer-top .ip-link a {
+  color: var(--color-white);
+  margin-right: 5px;
+}
+.footer-area .copyright {
+  background-color: #216583;
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+/*======= Blog Standard =======*/ /*======= Blog Details =======*/ /*======= Blog Pagination =======*/ /*======= Blog Comments =======*/ /*======= Blog Sidebar =======*/ /*======= Product =======*/ /*======= Product Category =======*/ /*======= Product Filter =======*/ /*======= Product Sidebar =======*/ /*======= Footer =======*//*# sourceMappingURL=style.css.map */

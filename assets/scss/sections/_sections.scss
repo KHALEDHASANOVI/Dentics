@@ -1,0 +1,248 @@
+/*======= Specific Section =======*/
+/*======= service-area Section =======*/
+.service-area {
+    background-color: $color-main;
+    .service-content {
+        h2 {
+            color: $color-white;
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 1.1;
+        }
+        p {
+            color: $color-white;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.46;
+        }
+    }
+    .service-box {
+        background-color: $color-white;
+        text-align: center;
+        padding: 24px 32px;
+        border-radius: 16px;
+        i {
+            font-size: 34px;
+            margin-bottom: 16px;
+        }
+        p {
+        }
+    }
+}
+/*======= key-service-area Section =======*/
+.key-service-area {
+    .key-content-top {
+        border-bottom: 1px solid $color-gray;
+        .key-heading {
+            background-color: #f8fafc;
+            // border-bottom: 1px solid $color-main;
+            padding: 104px 0px 56px 31px;
+            h2 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 1.34;
+            }
+        }
+        .key-text {
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.7;
+                color: $color-gray;
+            }
+        }
+    }
+    .key-content-bottom {
+        .key-img {
+            padding: 48px 0px 104px 31px;
+            background-color: #f8fafc;
+            border-radius: 0px 0px 136px 0px;
+        }
+        .key-list {
+            padding: 88px 0px 104px 0px;
+            h4 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 1.42;
+            }
+            ul {
+                li {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 1.46;
+                }
+            }
+        }
+    }
+}
+/*======= features-area Section =======*/
+.common-heading {
+    h3 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.34;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.1;
+    }
+}
+.features-area {
+    .icon-boxses {
+        .icon-box {
+            margin-bottom: 20px;
+            background-color: #f8fafc;
+            border: 1px solid rgba(82, 82, 91, 0.1);
+            border-radius: 16px;
+            padding: 40px 32px;
+            .i-box-title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 1.42;
+            }
+            .i-box-text {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.63;
+            }
+        }
+    }
+}
+/*======= history-area Section =======*/
+.history-area {
+    .history-content {
+        background: #f8fafc;
+        border: 1px solid rgba(82, 82, 91, 0.1);
+        border-radius: 16px;
+        padding: 48px;
+        h4 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 34px;
+            color: $color-gray;
+        }
+    }
+}
+/*======= team-area Section =======*/
+.team-area {
+    background: #f8fafc;
+    .img-box {
+        img {
+            border: 3px solid $color-white;
+            border-radius: 108px;
+        }
+        .img-box-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 34px;
+        }
+        .img-box-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .img-box-link {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-main;
+            border: 1.5px solid $color-main;
+            padding: 12px 40px;
+            border-radius: 8px;
+        }
+    }
+}
+/*======= contact-area Section =======*/
+.contact-area {
+    .contact-img {
+    }
+    .contact-form {
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .form-control {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 17px;
+        }
+        .form-check-input {
+            padding: 8px;
+            margin-right: 8px;
+        }
+    }
+    .form-floating > .form-select {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .form-floating > .form-control,
+    .form-floating > .form-select {
+        height: 35px;
+    }
+}
+/*======= Newsletter-area Section =======*/
+.newsletter-area {
+    background-color: #f8fafc;
+    .newsletter-bg {
+        background-color: #216583;
+        border-radius: 20px;
+        .newsletter-content {
+            h2 {
+                font-weight: 600;
+                font-size: 42px;
+                line-height: 46px;
+                color: $color-white;
+                margin-bottom: 48px;
+            }
+            .newsletter-form {
+                .form-control {
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    padding: 17px 20px;
+                    color: $color-white;
+                }
+                input::placeholder {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+/*======= footer-area Section =======*/
+.footer-area {
+    background: $color-main;
+    color: $color-white;
+    .footer-top {
+        .h-b-p {
+            padding-bottom: 40px;
+        }
+        .footer-brand {
+            color: $color-white;
+            font-family: $font-ubuntu;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 0.77;
+        }
+        .ip-link {
+            a {
+                color: $color-white;
+                margin-right: 5px;
+            }
+        }
+    }
+    .copyright {
+        background-color: #216583;
+        color: $color-white;
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
