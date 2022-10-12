@@ -76,18 +76,7 @@
     }
 }
 /*======= features-area Section =======*/
-.common-heading {
-    h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 1.34;
-    }
-    h2 {
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 1.1;
-    }
-}
+
 .features-area {
     .icon-boxses {
         .icon-box {
@@ -244,5 +233,92 @@
         color: $color-white;
         text-align: center;
         padding: 20px 0px;
+    }
+}
+
+/*======= slider Section =======*/
+.slider .slick-arrow {
+    border: 0;
+    height: 50px;
+    width: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    border-radius: 3px;
+    background-color: #18181b0d;
+    color: $color-black;
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    z-index: 5;
+    left: -17.5px;
+}
+
+.slider .slick-arrow.slick-next {
+    left: auto;
+    right: -17.5px;
+}
+
+.slider-v2 ul.slick-dots {
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    bottom: 15px;
+    width: 100%;
+}
+
+.slider-v2 .slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    background-color: #ffffff40;
+    border-radius: 10px;
+}
+
+.slider-v2 .slick-dots li {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    line-height: 0;
+    margin: 0 10px;
+}
+
+.slider-v2 .slick-dots li.slick-active button {
+    background-color: #ffffff90;
+}
+
+/*======= common-heading =======*/
+.common-heading {
+    h3 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.34;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.1;
+    }
+    .ch-underline {
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            left: 0;
+            bottom: 25px;
+            z-index: -1;
+        }
+        samp {
+            background-color: white;
+            padding: 0px 10px;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 1.1;
+            font-family: $font-inter;
+        }
     }
 }
