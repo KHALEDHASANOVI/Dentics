@@ -547,9 +547,6 @@ textarea {
   font-size: 18px;
   line-height: 1.35;
 }
-.header-area .navbar .navbar-collapse .navbar-nav .nav-item .common-button {
-  margin-left: 40px;
-}
 
 /*======= Hero Area =======*/
 .hero-area .hero-content h1 {
@@ -565,7 +562,7 @@ textarea {
   color: var(--color-gray);
 }
 .hero-area .hero-content .hero-links .common-button {
-  padding: 16px 48px;
+  padding: 16px 48px !important;
   margin-right: 48px;
 }
 .hero-area .hero-content .hero-links .hero-link {
@@ -578,6 +575,9 @@ textarea {
 .cat-area {
   background-color: var(--color-main);
   color: var(--color-white);
+}
+.cat-area .cat-img {
+  text-align: center;
 }
 .cat-area .cat-title {
   font-weight: 400;
@@ -618,12 +618,14 @@ textarea {
   font-weight: 500;
   font-size: 22px;
   line-height: 1.46;
+  padding-bottom: 10px;
 }
 .service-area .service-box {
   background-color: var(--color-white);
   text-align: center;
   padding: 24px 32px;
   border-radius: 16px;
+  margin-bottom: 10px;
 }
 .service-area .service-box i {
   font-size: 34px;
@@ -642,6 +644,9 @@ textarea {
   font-size: 48px;
   line-height: 1.34;
 }
+.key-service-area .key-content-top .key-text {
+  padding-top: 100px;
+}
 .key-service-area .key-content-top .key-text p {
   font-weight: 400;
   font-size: 20px;
@@ -649,7 +654,8 @@ textarea {
   color: var(--color-gray);
 }
 .key-service-area .key-content-bottom .key-img {
-  padding: 48px 0px 104px 31px;
+  text-align: center;
+  padding: 48px 0px 104px 0px;
   background-color: #f8fafc;
   border-radius: 0px 0px 136px 0px;
 }
@@ -687,6 +693,9 @@ textarea {
 }
 
 /*======= history-area Section =======*/
+.history-area .history-img {
+  text-align: center;
+}
 .history-area .history-content {
   background: #f8fafc;
   border: 1px solid rgba(82, 82, 91, 0.1);
@@ -735,6 +744,9 @@ textarea {
 }
 
 /*======= contact-area Section =======*/
+.contact-area .contact-img {
+  text-align: center;
+}
 .contact-area .contact-form label {
   font-weight: 400;
   font-size: 14px;

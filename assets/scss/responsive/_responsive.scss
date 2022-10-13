@@ -1,9 +1,17 @@
 // (max-width: 1599px)
 @include respond-below(c1600) {
 }
+// (min-width: 1599px)
+@include respond-above(c1600) {
+}
+
 // (max-width: 1399px)
 @include respond-below(xxl) {
 }
+// (min-width: 1399px)
+@include respond-above(xxl) {
+}
+
 // (max-width: 1199px)
 @include respond-below(xl) {
 }
@@ -14,38 +22,148 @@
     }
 }
 
-// (min-width: 992px) and (max-width: 1199px)
-@include respond-between(lg, xl) {
-}
-
-// (min-width: 768px) and (max-width: 1199px)
-@include respond-between(md, xl) {
-}
-
 // (max-width: 991px)
 @include respond-below(lg) {
+    .common-heading {
+        padding-bottom: 30px;
+        h3 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1;
+        }
+        .ch-underline {
+            samp {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 1.3;
+            }
+        }
+    }
+    .header-area {
+        .navbar {
+            padding-bottom: 8px;
+        }
+        .common-button {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: $color-white;
+            color: $color-black;
+            padding: 0 !important;
+            color: #000 !important;
+        }
+    }
+    .hero-area {
+        padding: 30px 0px 40px;
+    }
+    .service-area {
+        padding: 30px 0px;
+    }
+    .key-service-area {
+        .key-content-top {
+            .key-heading {
+                padding: 30px 0px 30px 31px;
+                h2 {
+                }
+            }
+            .key-text {
+                padding: 30px 0px;
+                p {
+                }
+            }
+        }
+        .key-content-bottom {
+            .key-img {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .key-list {
+                padding: 30px 0px 30px 0px;
+            }
+        }
+    }
+    .features-area {
+        padding: 30px 0px 30px 0px;
+    }
+    .cat-area {
+        padding: 30px 0px 30px 0px;
+        .cat-text {
+            margin-bottom: 40px;
+        }
+    }
+    .history-area {
+        padding: 30px 0px 30px 0px;
+        .history-img {
+            padding-bottom: 30px;
+        }
+    }
+    .team-area {
+        padding: 30px 0px;
+    }
+    .contact-area {
+        padding: 30px 0px;
+        .contact-img {
+        }
+    }
+    .newsletter-area {
+        padding: 30px 0px;
+    }
+    .footer-area {
+        .footer-top {
+            padding: 30px 0px;
+        }
+    }
+}
+// (min-width: 991px)
+@include respond-above(lg) {
+    .header-area {
+        .common-button {
+            margin-left: 40px;
+        }
+    }
+}
+
+// (max-width: 767px)
+@include respond-below(md) {
+}
+// (min-width: 767px)
+@include respond-above(md) {
+}
+
+// (max-width: 575px)
+@include respond-below(sm) {
+}
+// (min-width: 575px)
+@include respond-above(sm) {
+}
+
+// (max-width: 424px)
+@include respond-below(xs) {
+}
+// (min-width: 425px)
+@include respond-above(xs) {
+}
+
+// (min-width: 1199px) and (max-width: 1399px)
+@include respond-between(xl, xxl) {
+}
+
+// (min-width: 992px) and (max-width: 1199px)
+@include respond-between(lg, xl) {
 }
 
 // (min-width: 768px) and (max-width: 991px)
 @include respond-between(md, lg) {
 }
 
-// (max-width: 767px)
-@include respond-below(md) {
-}
-
-// (max-width: 575px)
-@include respond-below(sm) {
-}
-
 // (min-width: 576px) and (max-width: 767px)
 @include respond-between(sm, md) {
 }
 
-// (max-width: 424px)
-@include respond-below(xs) {
-}
-
-// (min-width: 425px)
-@include respond-above(xs) {
+// (min-width: 425px) and (max-width: 576px)
+@include respond-between(xs, sm) {
 }
